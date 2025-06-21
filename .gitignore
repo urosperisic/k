@@ -1,0 +1,41 @@
+# Virtual environment
+venv/
+env/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# VS Code settings
+.vscode/
+
+# Environment variables
+.env
+
+# Migrations (optional for DEV)
+# **/migrations/*.py
+**/migrations/__pycache__/
+
+# macOS
+.DS_Store
+
+# Pytest / test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Node.js
+node_modules/
+
+# System files
+Thumbs.db

@@ -1,0 +1,24 @@
+python -m venv venv
+
+source venv/bin/activate
+
+pip install django djangorestframework psycopg2-binary python-decouple drf-yasg djangorestframework-simplejwt djangorestframework-simplejwt
+
+django-admin startproject myproject .
+python manage.py startapp notes
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+python manage.py createsuperuser
+
+----------
+
+psql "e"
+\dt
+exit
+select * from accounts_customuser;
+DELETE FROM accounts_customuser WHERE username = 'un';
+
+----------
