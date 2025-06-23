@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     'drf_yasg',
     'accounts',
     'notes',
+    'blog'
 ]
 
 MIDDLEWARE = [
