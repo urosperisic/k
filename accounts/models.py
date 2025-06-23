@@ -11,6 +11,8 @@ class CustomUser(AbstractUser):
     def save(self, *args, **kwargs):
         if self.is_superuser:
             self.role = 'admin'
+        else:
+            self.role = 'user'
         super().save(*args, **kwargs)
 
     def __str__(self):

@@ -102,7 +102,7 @@ SWAGGER_SETTINGS = {
             'type': 'apiKey',
             'name': 'Authorization',
             'in': 'header',
-            'description': 'Unesi token u formatu: **Bearer &lt;token&gt;**',
+            'description': 'Enter the token in the format: **Bearer &lt;token&gt;**',
         }
     },
 }
