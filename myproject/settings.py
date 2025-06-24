@@ -20,7 +20,8 @@ INSTALLED_APPS = [
     'drf_yasg',
     'accounts',
     'notes',
-    'blog'
+    'blog',
+    'books',
 ]
 
 MIDDLEWARE = [
@@ -95,6 +96,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
     ),
+    'DEFAULT_FILTER_BACKENDS': ['rest_framework.filters.SearchFilter'],
 }
 
 SWAGGER_SETTINGS = {
